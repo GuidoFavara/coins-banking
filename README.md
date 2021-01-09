@@ -12,8 +12,8 @@ Demo:
 ## 🧭 Como Ejecutar
 
 ```bash
-# Clone este repositório
-$ git clone https://github.com/guidofavara/coins
+# Clonar el respositorio:
+$ git clone https://github.com/GuidoFavara/coins-banking
 ```
 
 ```bash
