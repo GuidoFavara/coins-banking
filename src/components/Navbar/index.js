@@ -28,14 +28,13 @@ const Navbar = ({ toggle }) => {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
-
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav scollNav={scrollNav}>
+        <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               Coins
@@ -45,16 +44,52 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to="acerca">Acerca de</NavLinks>
+                <NavLinks
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Acerca de
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="conocer">Conocer más</NavLinks>
+                <NavLinks
+                  to="discover"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Conocer más
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="servicios">Servicios</NavLinks>
+                <NavLinks
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Servicios
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="signup">Creá tu cuenta</NavLinks>
+                <NavLinks
+                  to="signup"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Creá tu cuenta
+                </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>

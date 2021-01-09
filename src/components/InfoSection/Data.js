@@ -40,7 +40,7 @@ export const homeObjThree = {
   lightText: false,
   lightTextDesc: false,
   topLine: "Hacete miembro",
-  headline: "Obtené tu cuenta en pocos pasos",
+  headline: "Creá tu cuenta en pocos pasos",
   description:
     "Conseguir tu cuenta bancaria nunca fue tan fácil, sólo con tu DNI o pasaporte.",
   buttonLabel: "Comenzar",

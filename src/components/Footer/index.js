@@ -22,8 +22,11 @@ import {
   SocialIconLink,
   ContactMe,
 } from "./FooterElemnts";
-
+import { animateScroll as scroll } from "react-scroll";
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
@@ -64,9 +67,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" />
-            Coins
-            <SocialLogo />
+            <SocialLogo to="/" onClick={toggleHome}>
+              Coins
+            </SocialLogo>
             <WebsiteRights>
               Coins © {new Date().getFullYear()} Todos los derechos reservados.
               Desarrollado por{" "}
