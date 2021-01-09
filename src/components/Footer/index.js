@@ -67,9 +67,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>
-              Coins
-            </SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome} />
+            Coins
+            <SocialLogo />
             <WebsiteRights>
               Coins © {new Date().getFullYear()} Todos los derechos reservados.
               Desarrollado por{" "}
